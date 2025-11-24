@@ -169,10 +169,10 @@ def upload_task():
             cursor.close()
             conn.close()
 
-#-----Feature 6: UPLOAD TASK RECORDING ------
+#-----Feature 6: UPLOAD CLASS RECORDING ------
 
 def task_recording():
-    print("\n--- Add Task Recording ---")
+    print("\n--- Add Class Recording ---")
     try:
         r_id = int(input("Enter Recording ID: "))
         r_topic = input("Enter Recording Name: ")
@@ -198,4 +198,5 @@ def task_recording():
         #5. Close connection
         if 'conn' in locals() and conn.open:
             cursor.close()
+
             conn.close()
