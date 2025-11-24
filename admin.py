@@ -1,4 +1,4 @@
-from admin_features import add_student, get_student, update_student, delete_student, upload_task, task_recording
+from admin_features import add_student, get_student, update_student, delete_student, upload_task, class_recording
 
 def admin_panel():
     while True:
@@ -10,7 +10,7 @@ def admin_panel():
         print("3. Update Studeent")
         print("4. Delete Student")
         print("5. Upload Tasks")
-        print("6. Task Recordings")
+        print("6. CLass Recordings")
         print("7. Exit/ Go Back")
 
         choice = input("Enter your choice (1-7): ")
@@ -26,8 +26,9 @@ def admin_panel():
         elif choice == '5':
             upload_task()
         elif choice == '6':
-            task_recording()
+            class_recording()
         elif choice == '7':
             break
         else:
+
             print("Invalid choice, Try Again.")
